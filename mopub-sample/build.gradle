@@ -127,6 +127,19 @@ dependencies {
     androidTestImplementation 'androidx.test:rules:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.2.0'
+
+    implementation 'com.mintegral.msdk:videojs:10.1.61'
+    implementation 'com.mintegral.msdk:mtgjscommon:10.1.61'
+    implementation 'com.mintegral.msdk:playercommon:10.1.61'
+    implementation 'com.mintegral.msdk:reward:10.1.61'
+    implementation 'com.mintegral.msdk:videocommon:10.1.61'
+    implementation 'com.mintegral.msdk:interstitialvideo:10.1.61'
+    implementation 'com.mintegral.msdk:mtgnative:10.1.61'
+    implementation 'com.mintegral.msdk:nativeex:10.1.61'
+    implementation 'com.mintegral.msdk:mtgbanner:10.1.61'
+    implementation 'com.mintegral.msdk:optimizedata:10.1.61'
+    implementation 'com.mintegral.msdk:common:10.1.61'
+    implementation 'com.mintegral.msdk:mtgbid:10.1.61'
 }
 
 task wrapper(type: Wrapper) {
