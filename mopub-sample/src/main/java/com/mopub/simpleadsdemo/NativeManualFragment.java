@@ -21,6 +21,7 @@ import com.mopub.nativeads.FlurryNativeAdRenderer;
 import com.mopub.nativeads.FlurryViewBinder;
 import com.mopub.nativeads.GooglePlayServicesAdRenderer;
 import com.mopub.nativeads.MediaViewBinder;
+import com.mopub.nativeads.MintegralAdRenderer;
 import com.mopub.nativeads.MoPubNative;
 import com.mopub.nativeads.MoPubStaticNativeAdRenderer;
 import com.mopub.nativeads.MoPubVideoNativeAdRenderer;
@@ -210,6 +211,17 @@ public class NativeManualFragment extends Fragment {
                         .privacyInformationIconImageId(R.id.native_privacy_information_icon_image)
                         .build());
 
+        MintegralAdRenderer mintegralAdRenderer = new MintegralAdRenderer(
+                new MintegralAdRenderer.MintegralViewBinder.Builder(R.layout.native_ad_mintegral)
+                        .titleId(R.id.native_title)
+                        .textId(R.id.native_text)
+                        .mediaViewId(R.id.native_media_view)
+                        .iconImageId(R.id.native_icon_image)
+                        .callToActionId(R.id.native_cta)
+                        .adChoicesId(R.id.native_privacy_information_icon_adchoice)
+                        .build());
+
+        mMoPubNative.registerAdRenderer(mintegralAdRenderer);
         // The first renderer that can handle a particular native ad gets used.
         // We are prioritizing network renderers.
 
